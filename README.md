@@ -1,16 +1,24 @@
-## Hi there 👋
+# 💫 About Me:
+Devansh Trivedi<br>ttrivedidevansh2007@gmail.com / devanshtrivedidei@gmail.com | +91 9045927577 | Agra, India |<br>linkedin.com/in/devansh-trivedi-01b024356 |<br>github.com/devanshtrivedi-bit<br>Introduction<br>Aspiring AI & Robotics Developer with hands-on experience in Python, Artificial Intelligence (AI), Machine Learning (ML),<br>robotics, IoT, and full-stack web development through academic projects and certifications. Skilled in hardware–software integration,<br>deep learning model development, real-time systems, and automation solutions. Strong in problem-solving, collaboration, and<br>innovation, delivering practical and user-focused technology solutions.<br>Education– Dayalbagh Educational Institute, Bachelor of Vocation in Artificial Intelligence & Robotics– Ch. Beeri Singh Inter College, Intermediate Certificate– Ch. Beeri Singh Inter College, High School<br>Relevant Experience and Academic Projects<br>2027<br>March 2024<br>March 2022– AI &Robotics Project Experience– Hands-on experience in Python, AI/ML, Robotics, IoT, and Full-Stack Development through academic<br>and personal projects.– AI Systems Development– Built projects including Image Recognition Chatbot, Air Quality Monitoring System, Spider Robot, Obstacle<br>Avoiding Robot, NextStop Platform, and Face Recognition Attendance System.– Technical Application– Implemented hardware–software integration, automation systems, live tracking, and real-time data processing<br>using AI, ML, IoT, and web technologies.– Certifications– Completed certifications in Artificial Intelligence Fundamentals, AI Internship, and Machine Learning in Python.<br>Highlighted Projects– Conversational Image Recognition Chatbot– Developed a deep-learning application using Python, torch, transformers, Pillow, implementing<br>VisionTransformer-GPT2 and multimodal learning for image-based query responses via Gradio. [GitHub Repository]– Air Quality Monitoring (AQM) System — IoT, ESP8266, Arduino– Developed an IoT solution using ESP8266, gas sensors, and Arduino<br>for real-time air quality monitoring and AQI display.– Spider Robot — Arduino Uno, Robotics– Designed a four-legged robot using Arduino Uno and 12 servo motors with autonomous navigation<br>and sensor integration.– Obstacle Avoiding Robot — Arduino Uno, Robotics– Built an autonomous robot using Arduino UNO, HC-SR04 ultrasonic sensor, servo<br>motor, and L293D motor shield for obstacle detection and avoidance with 99% accuracy.– NextStop — Real-Time Transit Platform– Developed a live public transportation tracking platform using React 19, Firebase, Leaflet.js,<br>Tailwind CSS, and OSRM API with live bus tracking, routing, and multilingual support. [GitHub Repository]– Face Recognition Attendance System — Python, OpenCV, Tkinter– Built an attendance system using Python, OpenCV, and Tkinter<br>with 500+ images, achieving 90%+ recognition accuracy. [GitHub Repository]<br>Certifications<br>• Artificial Intelligence Fundamentals– Anudip Foundation (2025)<br>• Artificial Intelligence Internship– My Job Grow (2025)<br>• Artificial Intelligence Workshop (15 Days)– Dayalbagh Educational Institute<br>• Machine Learning in Python– SkillUp (2025)<br>• Generative AI– SkillUp (2025)<br>Skills<br>• Programming: Python, R<br>• AI/ML Frameworks: OpenCV, Transformers, PyTorch, Tkinter, Pandas<br>• Web/Deployment: Firebase, Leaflet.js, Tailwind CSS, Gradio, HTML, CSS<br>• Hardware/Robotics: Arduino UNO, Arduino Nano, ESP8266, Sensors, Robotics, Digital Electronics<br>• Tools: VS Code, Google Colab, Git, OpenAI, Antigravity , Chatgpt<br>• Soft Skills: Problem-Solving, Communication, Team Collaboration<br>Interests<br>Artificial Intelligence & Machine Learning, Robotics & Automation, IoT Systems, Deep Learning, Real-Time Project’s😂
 
-<!--
-**devanshtrivedi-bit/devanshtrivedi-bit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+# 💻 Tech Stack:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.shion.dev/api?username=devanshtrivedi-bit&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://streak-stats.demolab.com/?user=devanshtrivedi-bit&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=devanshtrivedi-bit&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=devanshtrivedi-bit&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=devanshtrivedi-bit&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
+---
+[![](https://komarev.com/ghpvc/?username=devanshtrivedi-bit&icon=0&color=0)](https://visitcount.itsvg.in)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
