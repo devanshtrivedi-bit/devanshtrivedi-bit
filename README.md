@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I'm currently working on **AI & Robotics Projects, Face Recognition Systems, and IoT-Based Smart Solutions**<br><br>👯 I'm looking to collaborate on **Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects**<br><br>🤝 I'm looking for help with **Advanced Deep Learning, Computer Vision, and Real-Time AI Applications**<br><br>🌱 I'm currently learning **Generative AI, Advanced Machine Learning, and Full-Stack Development**<br><br>💬 Ask me about **Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development**<br><br>⚡ Fun fact: **I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.**<br>
+🔭 I'm currently working on **AI & Robotics Projects, and IoT-Based Smart Solutions**<br><br>👯 I'm looking to collaborate on **Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects**<br><br>🤝 I'm looking for help with **Advanced Deep Learning, Computer Vision, and Real-Time AI Applications**<br><br>🌱 I'm currently learning **Generative AI, Advanced Machine Learning, and Full-Stack Development**<br><br>💬 Ask me about **Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development**<br><br>⚡ Fun fact: **I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.**<br>
 
 
 ## 🌐 Socials:
