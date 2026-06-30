@@ -2,152 +2,134 @@
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19" />
-      <stop offset="100%" stop-color="#05070c" />
+      <stop offset="0%" stop-color="#0a0b16"/>
+      <stop offset="100%" stop-color="#030408"/>
     </linearGradient>
 
     <!-- Glass Pane Fill Gradient -->
-    <linearGradient id="glass-fill" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    <linearGradient id="glass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
     </linearGradient>
 
     <!-- Glass Border Gradient -->
     <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
-      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.05" />
-      <stop offset="70%" stop-color="#00f3ff" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#ff007f" stop-opacity="0.30" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.25"/>
     </linearGradient>
 
-    <!-- Drop Shadow Filter for Pane -->
+    <!-- Glass Reflection Shine -->
+    <linearGradient id="glass-shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Ambient Blur Filter -->
+    <filter id="ambient-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="55" />
+    </filter>
+
+    <!-- Glass Drop Shadow -->
     <filter id="glass-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000000" flood-opacity="0.6" />
     </filter>
-
-    <!-- Radial Gradients for Background Blobs -->
-    <radialGradient id="blob-cyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="blob-pink" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#ff007f" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="blob-purple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#bd00ff" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#bd00ff" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Blur Filter for Blobs -->
-    <filter id="blob-blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="30" />
-    </filter>
-
-    <!-- Glass Text Gradient -->
-    <linearGradient id="glass-text-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
-      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.6" />
-      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
-    </linearGradient>
   </defs>
 
   <style>
-    /* Pulsating and Moving Blobs */
-    @keyframes blob1-move {
+    /* Floating Ambient Blobs */
+    @keyframes float-1 {
       0%, 100% { transform: translate(0px, 0px) scale(1); }
-      50% { transform: translate(40px, -20px) scale(1.15); }
+      50% { transform: translate(-40px, 20px) scale(1.2); }
     }
-    @keyframes blob2-move {
+    @keyframes float-2 {
+      0%, 100% { transform: translate(0px, 0px) scale(1.0); }
+      50% { transform: translate(50px, -25px) scale(1.3); }
+    }
+    @keyframes float-3 {
       0%, 100% { transform: translate(0px, 0px) scale(1); }
-      50% { transform: translate(-50px, 30px) scale(1.2); }
-    }
-    @keyframes blob3-move {
-      0%, 100% { transform: translate(0px, 0px) scale(1); }
-      50% { transform: translate(30px, 40px) scale(0.9); }
-    }
-    @keyframes text-glow {
-      0%, 100% { filter: drop-shadow(0px 0px 4px rgba(255,255,255,0.1)); }
-      50% { filter: drop-shadow(0px 0px 10px rgba(0, 243, 255, 0.3)); }
+      50% { transform: translate(20px, 30px) scale(0.9); }
     }
 
     .blob-1 {
-      animation: blob1-move 10s infinite ease-in-out;
+      animation: float-1 9s infinite ease-in-out;
+      transform-origin: center;
     }
     .blob-2 {
-      animation: blob2-move 12s infinite ease-in-out;
+      animation: float-2 12s infinite ease-in-out;
+      transform-origin: center;
     }
     .blob-3 {
-      animation: blob3-move 8s infinite ease-in-out;
+      animation: float-3 10s infinite ease-in-out;
+      transform-origin: center;
     }
-    
-    .main-title {
-      fill: url(#glass-text-grad);
-      stroke: rgba(255, 255, 255, 0.7);
-      stroke-width: 0.6px;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      font-weight: 900;
+
+    /* Text Styles */
+    .title-text {
+      fill: #ffffff;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
       letter-spacing: 6px;
-      filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.55));
+      font-size: 38px;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .subtitle-text {
+      fill: rgba(255, 255, 255, 0.85);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      font-size: 11px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
     
-    .sub-title {
-      fill: rgba(255, 255, 255, 0.7);
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      font-weight: 600;
-      letter-spacing: 2px;
+    .accent-dot {
+      fill: #00f3ff;
+      filter: drop-shadow(0 0 4px #00f3ff);
     }
   </style>
 
-  <!-- Background Base -->
+  <!-- Dark Background -->
   <rect width="800" height="220" fill="url(#bg-gradient)" />
 
-  <!-- Animated Glowing Background Blobs (Masked to keep inside boundary) -->
-  <g clip-path="url(#container-clip)">
-    <!-- Cyan Blob (Top Left) -->
-    <circle cx="120" cy="50" r="130" fill="url(#blob-cyan)" class="blob-1" filter="url(#blob-blur)" />
-    <!-- Pink Blob (Bottom Right) -->
-    <circle cx="680" cy="170" r="140" fill="url(#blob-pink)" class="blob-2" filter="url(#blob-blur)" />
-    <!-- Purple Blob (Middle Bottom) -->
-    <circle cx="400" cy="200" r="100" fill="url(#blob-purple)" class="blob-3" filter="url(#blob-blur)" />
+  <!-- Colorful Ambient Glows (Behind the Glass) -->
+  <g filter="url(#ambient-blur)" opacity="0.65">
+    <!-- Cyan Blob -->
+    <circle cx="260" cy="110" r="80" fill="#00f3ff" class="blob-1" />
+    <!-- Pink/Magenta Blob -->
+    <circle cx="540" cy="110" r="90" fill="#ff007f" class="blob-2" />
+    <!-- Purple Blob -->
+    <circle cx="400" cy="120" r="70" fill="#bd00ff" class="blob-3" />
   </g>
-  
-  <clipPath id="container-clip">
-    <rect width="800" height="220" rx="6" />
-  </clipPath>
 
-  <!-- Glassmorphism Floating Pane -->
-  <rect x="40" y="30" width="720" height="160" rx="24" fill="url(#glass-fill)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#glass-shadow)" />
-
-  <!-- Glass Pane Decorative Highlights -->
-  <!-- Top Left Gloss lines -->
-  <path d="M 60 50 A 10 10 0 0 1 70 40 L 150 40" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.15" />
-  
-  <!-- Sleek HUD indicator inside glass -->
-  <circle cx="70" cy="55" r="3" fill="#ff007f" opacity="0.7" />
-  <circle cx="82" cy="55" r="3" fill="#00f3ff" opacity="0.7" />
-  <circle cx="94" cy="55" r="3" fill="#ffffff" opacity="0.3" />
-  <text x="110" y="59" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="8" letter-spacing="1">DEVANSH_SYS</text>
-  
-  <!-- Right HUD indicator -->
-  <text x="730" y="59" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="8" text-anchor="end" letter-spacing="1">SYS_ACTIVE_v3.5</text>
-
-  <!-- Centered Name and Subtitle -->
-  <g transform="translate(400, 115)">
-    <!-- Title -->
-    <text x="0" y="0" font-size="36" text-anchor="middle" class="main-title">DEVANSH TRIVEDI</text>
+  <!-- Glassmorphism Container Card -->
+  <!-- We apply shadow, gradient fill, and the reflection borders -->
+  <g filter="url(#glass-shadow)">
+    <!-- Base frosted glass sheet -->
+    <rect x="70" y="30" width="660" height="160" rx="20" ry="20" fill="url(#glass-grad)" stroke="url(#glass-border)" stroke-width="1.5" />
     
-    <!-- Subtitle -->
-    <text x="0" y="32" font-size="11" text-anchor="middle" class="sub-title">
-      AI, ROBOTICS &amp; IOT ENGINEER <tspan fill="#ff007f">•</tspan> FULL STACK DEVELOPER
-    </text>
+    <!-- Glossy shine overlay -->
+    <rect x="71" y="31" width="658" height="158" rx="19" ry="19" fill="url(#glass-shine)" pointer-events="none" />
   </g>
 
-  <!-- Tech Dots / Grid Lines inside glass pane (low opacity) -->
-  <line x1="60" y1="160" x2="740" y2="160" stroke="#ffffff" stroke-width="0.5" opacity="0.1" stroke-dasharray="4 4" />
-  <circle cx="730" cy="160" r="1.5" fill="#00f3ff" opacity="0.5" />
-  <circle cx="70" cy="160" r="1.5" fill="#ff007f" opacity="0.5" />
+  <!-- Glass Pane Content (Name and Title) -->
+  <!-- Centered horizontally and vertically -->
+  <g transform="translate(400, 110)">
+    <!-- Main Name -->
+    <text x="0" y="2" class="title-text" text-anchor="middle">DEVANSH TRIVEDI</text>
+    
+    <!-- Decorative underline -->
+    <line x1="-80" y1="18" x2="80" y2="18" stroke="#ffffff" stroke-width="1" opacity="0.3" />
+    <circle cx="0" cy="18" r="2.5" class="accent-dot" />
+
+    <!-- Subtitle Taglines -->
+    <text x="0" y="40" class="subtitle-text" text-anchor="middle">AI, ROBOTICS &amp; IOT ENGINEER • FULL STACK DEVELOPER</text>
+  </g>
+
+  <!-- Corner Tech Details for Glass styling -->
+  <g opacity="0.4" fill="#ffffff" font-family="monospace" font-size="8" letter-spacing="1">
+    <text x="90" y="52">SYS.INIT: SAFE</text>
+    <text x="710" y="52" text-anchor="end">LOC: 27.17° N</text>
+  </g>
 </svg>
