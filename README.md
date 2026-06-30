@@ -8,14 +8,14 @@
   <tr style="border: none;">
     <td width="55%" valign="top" style="border: none; padding-right: 20px;">
       <h3>💫 About Me:</h3>
-      <p>
-        🔭 I'm currently working on <strong>AI &amp; Robotics Projects, and IoT-Based Smart Solutions</strong><br/><br/>
-        👯 I'm looking to collaborate on <strong>Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects</strong><br/><br/>
-        🤝 I'm looking for help with <strong>Advanced Deep Learning, Computer Vision, and Real-Time AI Applications</strong><br/><br/>
-        🌱 I'm currently learning <strong>Generative AI, Advanced Machine Learning, and Full-Stack Development</strong><br/><br/>
-        💬 Ask me about <strong>Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development</strong><br/><br/>
-        ⚡ Fun fact: <strong>I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.</strong>
-      </p>
+      <ul>
+        <li>🔭 Currently working on <strong>AI &amp; Robotics Projects, and IoT-Based Smart Solutions</strong></li>
+        <li>👯 Looking to collaborate on <strong>Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects</strong></li>
+        <li>🤝 Seeking guidance with <strong>Advanced Deep Learning, Computer Vision, and Real-Time AI Applications</strong></li>
+        <li>🌱 Currently learning <strong>Generative AI, Advanced Machine Learning, and Full-Stack Development</strong></li>
+        <li>💬 Ask me about <strong>Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development</strong></li>
+        <li>⚡ Fun fact: <strong>I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.</strong></li>
+      </ul>
       <br/>
       <h3>🌐 Connect with me:</h3>
       <p>
@@ -32,7 +32,7 @@
     </td>
     <td width="45%" valign="top" style="border: none;">
       <h3>🏆 GitHub Trophies</h3>
-      <img src="https://github-profile-trophy.vercel.app/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4" width="100%" alt="Trophies" />
+      <img src="https://github-trophies.devomb.com/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4" width="100%" alt="Trophies" />
     </td>
   </tr>
 </table>
@@ -44,8 +44,12 @@
   <summary><b>🕹️ devansh's Retro Arcade Room</b></summary>
   <br/>
   <div align="center">
-    <p>Enjoy a classic game of Pac-Man running on an infinite loop in pure SVG!</p>
-    <img src="./pacman.svg" alt="Pac-Man Retro Arcade Game" width="100%" />
+    <p>Enjoy a classic game of Pac-Man running on my actual GitHub contributions!</p>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devanshtrivedi-bit/devanshtrivedi-bit/output/pacman-contribution-graph-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/devanshtrivedi-bit/devanshtrivedi-bit/output/pacman-contribution-graph.svg">
+      <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/devanshtrivedi-bit/devanshtrivedi-bit/output/pacman-contribution-graph-dark.svg" width="100%">
+    </picture>
   </div>
 </details>
 
@@ -137,5 +141,5 @@
   </a>
   <br/>
   <br/>
-  <sub>Created with ❤️ and powered by SVG animations</sub>
+  <sub>Created with ❤️ and powered by GitHub Actions</sub>
 </div>
