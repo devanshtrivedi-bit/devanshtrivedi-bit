@@ -1,0 +1,37 @@
+name: Daily Auto Contribution
+
+on:
+  schedule:
+    # Runs every day at 8:00 AM IST (2:30 AM UTC)
+    - cron: "30 2 * * *"
+  workflow_dispatch: # Allows manual trigger from Actions tab
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add daily contribution entry
+        run: |
+          DATE=$(date -u +"%Y-%m-%dT%H:%M:%S.000000")
+          echo "Contribution on ${DATE} - Commit 0" >> contributions.txt
+          echo "Contribution on ${DATE} - Commit 1" >> contributions.txt
+          echo "Contribution on ${DATE} - Commit 2" >> contributions.txt
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push
+        run: |
+          git add contributions.txt
+          git commit -m "🟩 Daily auto contribution - $(date -u +%Y-%m-%d)"
+          git push origin main
