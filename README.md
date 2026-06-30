@@ -1,27 +1,141 @@
-# 💫 About Me:
-🔭 I'm currently working on **AI & Robotics Projects, and IoT-Based Smart Solutions**<br><br>👯 I'm looking to collaborate on **Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects**<br><br>🤝 I'm looking for help with **Advanced Deep Learning, Computer Vision, and Real-Time AI Applications**<br><br>🌱 I'm currently learning **Generative AI, Advanced Machine Learning, and Full-Stack Development**<br><br>💬 Ask me about **Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development**<br><br>⚡ Fun fact: **I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.**<br>
+<div align="center">
+  <img src="./header.svg" alt="Devansh Trivedi Banner" width="100%" />
+</div>
 
+<br/>
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/_devansh_trivedi_) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/devanshtrivedi-bit) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:devanshtrivedidei@gmail.com) 
+<table align="center" width="100%" style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td width="55%" valign="top" style="border: none; padding-right: 20px;">
+      <h3>💫 About Me:</h3>
+      <p>
+        🔭 I'm currently working on <strong>AI &amp; Robotics Projects, and IoT-Based Smart Solutions</strong><br/><br/>
+        👯 I'm looking to collaborate on <strong>Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects</strong><br/><br/>
+        🤝 I'm looking for help with <strong>Advanced Deep Learning, Computer Vision, and Real-Time AI Applications</strong><br/><br/>
+        🌱 I'm currently learning <strong>Generative AI, Advanced Machine Learning, and Full-Stack Development</strong><br/><br/>
+        💬 Ask me about <strong>Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development</strong><br/><br/>
+        ⚡ Fun fact: <strong>I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.</strong>
+      </p>
+      <br/>
+      <h3>🌐 Connect with me:</h3>
+      <p>
+        <a href="https://linkedin.com/in/devanshtrivedi-bit" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+        </a>
+        <a href="https://instagram.com/_devansh_trivedi_" target="_blank">
+          <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" />
+        </a>
+        <a href="mailto:devanshtrivedidei@gmail.com">
+          <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+        </a>
+      </p>
+    </td>
+    <td width="45%" valign="top" style="border: none;">
+      <h3>🏆 GitHub Trophies</h3>
+      <img src="https://github-profile-trophy.vercel.app/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4" width="100%" alt="Trophies" />
+    </td>
+  </tr>
+</table>
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=devanshtrivedi-bit&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=devanshtrivedi-bit&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=devanshtrivedi-bit&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<br/>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=devanshtrivedi-bit&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+<!-- Retro Arcade Section -->
+<details open>
+  <summary><b>🕹️ devansh's Retro Arcade Room</b></summary>
+  <br/>
+  <div align="center">
+    <p>Enjoy a classic game of Pac-Man running on an infinite loop in pure SVG!</p>
+    <img src="./pacman.svg" alt="Pac-Man Retro Arcade Game" width="100%" />
+  </div>
+</details>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<br/>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=devanshtrivedi-bit&limit=5&theme=dark&combine_all_yearly_contributions=true)
+### 💻 Tech Stack:
 
----
-[![](https://komarev.com/ghpvc/?username=devanshtrivedi-bit&icon=10&color=0)](https://visitcount.itsvg.in)
+<table width="100%">
+  <tr>
+    <td align="center" width="25%"><b>Programming Languages</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+      <img src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white" alt="R" />
+      <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><b>AI &amp; Data Science</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+      <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+      <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib" />
+      <img src="https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+      <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch" />
+      <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow" />
+      <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><b>Robotics &amp; IoT</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino" />
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+      <img src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34" alt="Firebase" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><b>DevOps &amp; Tools</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+      <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </td>
+  </tr>
+</table>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<br/>
+
+### 📊 GitHub Stats:
+
+<div align="center">
+  <table border="0" style="border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+      <td style="border: none; padding: 5px;">
+        <img src="https://github-readme-stats.shion.dev/api?username=devanshtrivedi-bit&theme=radical&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" height="150" />
+      </td>
+      <td style="border: none; padding: 5px;">
+        <img src="https://streak-stats.demolab.com/?user=devanshtrivedi-bit&theme=radical&hide_border=false" alt="Streak Stats" height="150" />
+      </td>
+    </tr>
+    <tr style="border: none;">
+      <td style="border: none; padding: 5px;" colspan="2" align="center">
+        <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=devanshtrivedi-bit&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" width="380" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br/>
+
+### ✍️ Random Dev Quote:
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Developer Quote" />
+</div>
+
+<br/>
+
+### 🔝 Top Contributed Repo:
+<div align="center">
+  <img src="https://github-contributor-stats.vercel.app/api?username=devanshtrivedi-bit&limit=5&theme=radical&combine_all_yearly_contributions=true" alt="Top Contributed Repos" />
+</div>
+
+<br/>
+<hr/>
+<br/>
+
+<div align="center">
+  <a href="https://visitcount.itsvg.in">
+    <img src="https://komarev.com/ghpvc/?username=devanshtrivedi-bit&icon=10&color=9b00ff" alt="Profile Views" />
+  </a>
+  <br/>
+  <br/>
+  <sub>Created with ❤️ and powered by SVG animations</sub>
+</div>

@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="100%" height="120">
+  <defs>
+    <!-- Glow Filter for Maze Walls -->
+    <filter id="glow-blue" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Dots Clip Path -->
+    <clipPath id="dots-clip">
+      <rect id="dots-mask-rect" x="0" y="0" width="800" height="120" />
+    </clipPath>
+  </defs>
+
+  <style>
+    /* Main Movements */
+    @keyframes pacman-move {
+      0% { transform: translate(-50px, 60px) scaleX(1); }
+      44.44% { transform: translate(850px, 60px) scaleX(1); }
+      44.45%, 50% { transform: translate(850px, 60px) scaleX(-1); }
+      94.44% { transform: translate(-50px, 60px) scaleX(-1); }
+      94.45%, 100% { transform: translate(-50px, 60px) scaleX(1); }
+    }
+
+    /* Chomping Mouth */
+    @keyframes chomp-top {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-35deg); }
+    }
+    @keyframes chomp-bottom {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(35deg); }
+    }
+
+    /* Ghost Status Color and Flashing */
+    @keyframes ghost-body-anim {
+      0%, 44.44% { fill: var(--normal-color); }
+      44.45%, 80% { fill: #2121de; }
+      82%, 86%, 90% { fill: #ffffff; }
+      80%, 84%, 88%, 92% { fill: #2121de; }
+      94.44%, 100% { fill: var(--normal-color); }
+    }
+
+    @keyframes eyes-normal-anim {
+      0%, 44.44% { opacity: 1; }
+      44.45%, 94.44% { opacity: 0; }
+      94.45%, 100% { opacity: 1; }
+    }
+
+    @keyframes eyes-frightened-anim {
+      0%, 44.44% { opacity: 0; }
+      44.45%, 94.44% { opacity: 1; }
+      94.45%, 100% { opacity: 0; }
+    }
+
+    /* Dots Mask translation */
+    @keyframes dots-mask-anim {
+      0% { transform: translateX(0); }
+      44.44% { transform: translateX(900px); }
+      44.45%, 94.44% { transform: translateX(900px); opacity: 0; }
+      94.45%, 100% { transform: translateX(0); opacity: 1; }
+    }
+
+    /* Power Pellets */
+    @keyframes right-pellet {
+      0%, 10%, 20%, 30% { opacity: 1; }
+      5%, 15%, 25%, 35% { opacity: 0.2; }
+      37.9% { opacity: 1; }
+      38%, 94.44% { opacity: 0; }
+      94.45%, 100% { opacity: 1; }
+    }
+
+    @keyframes left-pellet {
+      0%, 50% { opacity: 0; }
+      50.1%, 60%, 70%, 80% { opacity: 1; }
+      55%, 65%, 75%, 85% { opacity: 0.2; }
+      87.9% { opacity: 1; }
+      88%, 100% { opacity: 0; }
+    }
+
+    /* Class definitions */
+    .pacman-animated-group {
+      animation: pacman-move 18s infinite linear;
+    }
+    .pacman-top {
+      animation: chomp-top 0.25s infinite ease-in-out;
+      transform-origin: 0px 0px;
+    }
+    .pacman-bottom {
+      animation: chomp-bottom 0.25s infinite ease-in-out;
+      transform-origin: 0px 0px;
+    }
+    
+    .ghost-animated-group {
+      animation: pacman-move 18s infinite linear;
+    }
+    .ghost-body {
+      animation: ghost-body-anim 18s infinite;
+    }
+    .eyes-normal {
+      animation: eyes-normal-anim 18s infinite;
+    }
+    .eyes-frightened {
+      animation: eyes-frightened-anim 18s infinite;
+    }
+    .dots-mask {
+      animation: dots-mask-anim 18s infinite linear;
+    }
+    .right-p {
+      animation: right-pellet 18s infinite;
+      transform-origin: 720px 60px;
+    }
+    .left-p {
+      animation: left-pellet 18s infinite;
+      transform-origin: 80px 60px;
+    }
+    
+    /* Tentacle animation */
+    @keyframes wave {
+      0%, 100% { d: path("M -15,15 L -15,-2 A 15,15 0 0,1 15,-2 L 15,15 L 10,10 L 5,15 L 0,10 L -5,15 L -10,10 Z"); }
+      50% { d: path("M -15,15 L -15,-2 A 15,15 0 0,1 15,-2 L 15,15 L 10,13 L 5,10 L 0,13 L -5,10 L -10,13 Z"); }
+    }
+    .ghost-path {
+      animation: wave 0.3s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="#03020a" rx="8" />
+
+  <!-- Maze Walls -->
+  <path d="M 10 20 L 790 20" stroke="#0055ff" stroke-width="4" fill="none" filter="url(#glow-blue)" />
+  <path d="M 10 100 L 790 100" stroke="#0055ff" stroke-width="4" fill="none" filter="url(#glow-blue)" />
+
+  <!-- Decorative Maze Blocks -->
+  <rect x="160" y="30" width="60" height="10" rx="3" stroke="#002b80" stroke-width="1.5" fill="none" opacity="0.5" />
+  <rect x="370" y="30" width="60" height="10" rx="3" stroke="#002b80" stroke-width="1.5" fill="none" opacity="0.5" />
+  <rect x="580" y="30" width="60" height="10" rx="3" stroke="#002b80" stroke-width="1.5" fill="none" opacity="0.5" />
+  <rect x="260" y="80" width="80" height="10" rx="3" stroke="#002b80" stroke-width="1.5" fill="none" opacity="0.5" />
+  <rect x="460" y="80" width="80" height="10" rx="3" stroke="#002b80" stroke-width="1.5" fill="none" opacity="0.5" />
+
+  <!-- Power Pellets (Dynamic) -->
+  <circle cx="80" cy="60" r="7" fill="#ffb8ae" class="left-p" />
+  <circle cx="720" cy="60" r="7" fill="#ffb8ae" class="right-p" />
+
+  <!-- Food Dots Group with Animated Clip Path -->
+  <g clip-path="url(#dots-clip-unique)">
+    <!-- We animate the mask rectangle within the clipPath -->
+    <clipPath id="dots-clip-unique">
+      <rect width="900" height="120" class="dots-mask" x="-50" y="0" />
+    </clipPath>
+    <!-- Dots -->
+    <circle cx="120" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="160" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="200" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="240" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="280" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="320" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="360" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="400" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="440" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="480" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="520" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="560" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="600" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="640" cy="60" r="3.5" fill="#ffb8ae" />
+    <circle cx="680" cy="60" r="3.5" fill="#ffb8ae" />
+  </g>
+
+  <!-- Pac-Man Character -->
+  <g class="pacman-animated-group">
+    <g class="pacman-mouth">
+      <!-- Top Semicircle -->
+      <path class="pacman-top" d="M -16,0 A 16,16 0 0,1 16,0 L 0,0 Z" fill="#FFE100" />
+      <!-- Bottom Semicircle -->
+      <path class="pacman-bottom" d="M 16,0 A 16,16 0 0,1 -16,0 L 0,0 Z" fill="#FFE100" />
+    </g>
+  </g>
+
+  <!-- Ghost 1: Blinky (Red) -->
+  <g transform="translate(-55, 0)">
+    <g class="ghost-animated-group">
+      <g class="ghost" style="--normal-color: #ff0000;">
+        <path class="ghost-body ghost-path" d="M -15,15 L -15,-2 A 15,15 0 0,1 15,-2 L 15,15 L 10,10 L 5,15 L 0,10 L -5,15 L -10,10 Z" />
+        <!-- Eyes Normal -->
+        <g class="eyes-normal">
+          <circle cx="-5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="-3" cy="-4" r="1.8" fill="#0000ff" />
+          <circle cx="7" cy="-4" r="1.8" fill="#0000ff" />
+        </g>
+        <!-- Eyes Frightened -->
+        <g class="eyes-frightened">
+          <circle cx="-5" cy="-4" r="2" fill="#ffb8ae" />
+          <circle cx="5" cy="-4" r="2" fill="#ffb8ae" />
+          <path d="M -8,5 L -6,3 L -4,5 L -2,3 L 0,5 L 2,3 L 4,5 L 6,3 L 8,5" fill="none" stroke="#ffb8ae" stroke-width="1.5" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Ghost 2: Pinky (Pink) -->
+  <g transform="translate(-95, 0)">
+    <g class="ghost-animated-group">
+      <g class="ghost" style="--normal-color: #ffb8ff;">
+        <path class="ghost-body ghost-path" d="M -15,15 L -15,-2 A 15,15 0 0,1 15,-2 L 15,15 L 10,10 L 5,15 L 0,10 L -5,15 L -10,10 Z" />
+        <g class="eyes-normal">
+          <circle cx="-5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="-3" cy="-4" r="1.8" fill="#0000ff" />
+          <circle cx="7" cy="-4" r="1.8" fill="#0000ff" />
+        </g>
+        <g class="eyes-frightened">
+          <circle cx="-5" cy="-4" r="2" fill="#ffb8ae" />
+          <circle cx="5" cy="-4" r="2" fill="#ffb8ae" />
+          <path d="M -8,5 L -6,3 L -4,5 L -2,3 L 0,5 L 2,3 L 4,5 L 6,3 L 8,5" fill="none" stroke="#ffb8ae" stroke-width="1.5" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Ghost 3: Inky (Cyan) -->
+  <g transform="translate(-135, 0)">
+    <g class="ghost-animated-group">
+      <g class="ghost" style="--normal-color: #00ffff;">
+        <path class="ghost-body ghost-path" d="M -15,15 L -15,-2 A 15,15 0 0,1 15,-2 L 15,15 L 10,10 L 5,15 L 0,10 L -5,15 L -10,10 Z" />
+        <g class="eyes-normal">
+          <circle cx="-5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="-3" cy="-4" r="1.8" fill="#0000ff" />
+          <circle cx="7" cy="-4" r="1.8" fill="#0000ff" />
+        </g>
+        <g class="eyes-frightened">
+          <circle cx="-5" cy="-4" r="2" fill="#ffb8ae" />
+          <circle cx="5" cy="-4" r="2" fill="#ffb8ae" />
+          <path d="M -8,5 L -6,3 L -4,5 L -2,3 L 0,5 L 2,3 L 4,5 L 6,3 L 8,5" fill="none" stroke="#ffb8ae" stroke-width="1.5" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Ghost 4: Clyde (Orange) -->
+  <g transform="translate(-175, 0)">
+    <g class="ghost-animated-group">
+      <g class="ghost" style="--normal-color: #ffb852;">
+        <path class="ghost-body ghost-path" d="M -15,15 L -15,-2 A 15,15 0 0,1 15,-2 L 15,15 L 10,10 L 5,15 L 0,10 L -5,15 L -10,10 Z" />
+        <g class="eyes-normal">
+          <circle cx="-5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="5" cy="-4" r="3.5" fill="#ffffff" />
+          <circle cx="-3" cy="-4" r="1.8" fill="#0000ff" />
+          <circle cx="7" cy="-4" r="1.8" fill="#0000ff" />
+        </g>
+        <g class="eyes-frightened">
+          <circle cx="-5" cy="-4" r="2" fill="#ffb8ae" />
+          <circle cx="5" cy="-4" r="2" fill="#ffb8ae" />
+          <path d="M -8,5 L -6,3 L -4,5 L -2,3 L 0,5 L 2,3 L 4,5 L 6,3 L 8,5" fill="none" stroke="#ffb8ae" stroke-width="1.5" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
