@@ -126,12 +126,24 @@
 
 <br/>
 
-### 🔝 Top Contributed Repo:
+### 💻 Featured Projects:
 <div align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=devanshtrivedi-bit&limit=5&theme=radical&combine_all_yearly_contributions=true" alt="Top Contributed Repos" />
+  <a href="https://github.com/devanshtrivedi-bit/devansh-trivedi-portfolio">
+    <img src="https://github-readme-stats.shion.dev/api/pin/?username=devanshtrivedi-bit&repo=devansh-trivedi-portfolio&theme=radical" alt="Portfolio" />
+  </a>
+  <a href="https://github.com/devanshtrivedi-bit/facerecognization-attendance-system">
+    <img src="https://github-readme-stats.shion.dev/api/pin/?username=devanshtrivedi-bit&repo=facerecognization-attendance-system&theme=radical" alt="Face Recognition Attendance System" />
+  </a>
 </div>
-
 <br/>
+<div align="center">
+  <a href="https://github.com/devanshtrivedi-bit/imagegpt">
+    <img src="https://github-readme-stats.shion.dev/api/pin/?username=devanshtrivedi-bit&repo=imagegpt&theme=radical" alt="Image GPT" />
+  </a>
+  <a href="https://github.com/devanshtrivedi-bit/Github-cheatsheet">
+    <img src="https://github-readme-stats.shion.dev/api/pin/?username=devanshtrivedi-bit&repo=Github-cheatsheet&theme=radical" alt="GitHub Cheatsheet" />
+  </a>
+</div>
 <hr/>
 <br/>
 
