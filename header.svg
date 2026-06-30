@@ -45,6 +45,14 @@
     <filter id="blob-blur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="30" />
     </filter>
+
+    <!-- Glass Text Gradient -->
+    <linearGradient id="glass-text-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
   </defs>
 
   <style>
@@ -77,11 +85,13 @@
     }
     
     .main-title {
-      fill: #ffffff;
+      fill: url(#glass-text-grad);
+      stroke: rgba(255, 255, 255, 0.7);
+      stroke-width: 0.6px;
       font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      font-weight: 800;
-      letter-spacing: 5px;
-      animation: text-glow 4s infinite ease-in-out;
+      font-weight: 900;
+      letter-spacing: 6px;
+      filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.55));
     }
     
     .sub-title {
