@@ -4,38 +4,35 @@
 
 <br/>
 
-<table align="center" width="100%" style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td width="55%" valign="top" style="border: none; padding-right: 20px;">
-      <h3>💫 About Me:</h3>
-      <ul>
-        <li>🔭 Currently working on <strong>AI &amp; Robotics Projects, and IoT-Based Smart Solutions</strong></li>
-        <li>👯 Looking to collaborate on <strong>Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects</strong></li>
-        <li>🤝 Seeking guidance with <strong>Advanced Deep Learning, Computer Vision, and Real-Time AI Applications</strong></li>
-        <li>🌱 Currently learning <strong>Generative AI, Advanced Machine Learning, and Full-Stack Development</strong></li>
-        <li>💬 Ask me about <strong>Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development</strong></li>
-        <li>⚡ Fun fact: <strong>I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.</strong></li>
-      </ul>
-      <br/>
-      <h3>🌐 Connect with me:</h3>
-      <p>
-        <a href="https://linkedin.com/in/devanshtrivedi-bit" target="_blank">
-          <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-        </a>
-        <a href="https://instagram.com/_devansh_trivedi_" target="_blank">
-          <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" />
-        </a>
-        <a href="mailto:devanshtrivedidei@gmail.com">
-          <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-        </a>
-      </p>
-    </td>
-    <td width="45%" valign="top" style="border: none;">
-      <h3>🏆 GitHub Trophies</h3>
-      <img src="https://github-trophies.devomb.com/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4" width="100%" alt="Trophies" />
-    </td>
-  </tr>
-</table>
+### 💫 About Me:
+- 🔭 Currently working on <strong>AI &amp; Robotics Projects, and IoT-Based Smart Solutions</strong>
+- 👯 Looking to collaborate on <strong>Artificial Intelligence, Machine Learning, Robotics, and Open-Source Projects</strong>
+- 🤝 Seeking guidance with <strong>Advanced Deep Learning, Computer Vision, and Real-Time AI Applications</strong>
+- 🌱 Currently learning <strong>Generative AI, Advanced Machine Learning, and Full-Stack Development</strong>
+- 💬 Ask me about <strong>Python, AI/ML, Robotics, Arduino, IoT, OpenCV, and Web Development</strong>
+- ⚡ Fun fact: <strong>I enjoy turning innovative ideas into real-world AI and robotics projects that solve practical problems.</strong>
+
+<br/>
+
+### 🌐 Connect with me:
+<p>
+  <a href="https://linkedin.com/in/devanshtrivedi-bit" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://instagram.com/_devansh_trivedi_" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="mailto:devanshtrivedidei@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
+
+<br/>
+
+### 🏆 GitHub Trophies:
+<div align="center">
+  <img src="https://github-trophies.devomb.com/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4" width="100%" alt="Trophies" />
+</div>
 
 <br/>
 
