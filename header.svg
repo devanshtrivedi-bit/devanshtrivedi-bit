@@ -36,36 +36,20 @@
     <filter id="glass-shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000000" flood-opacity="0.6" />
     </filter>
+
+    <!-- Glowing Cyan Filter (Pulsing Deviation) -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur">
+        <animate attributeName="stdDeviation" values="2;4.5;2" dur="4s" repeatCount="indefinite" />
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <style>
-    /* Floating Ambient Blobs */
-    @keyframes float-1 {
-      0%, 100% { transform: translate(0px, 0px) scale(1); }
-      50% { transform: translate(-40px, 20px) scale(1.2); }
-    }
-    @keyframes float-2 {
-      0%, 100% { transform: translate(0px, 0px) scale(1.0); }
-      50% { transform: translate(50px, -25px) scale(1.3); }
-    }
-    @keyframes float-3 {
-      0%, 100% { transform: translate(0px, 0px) scale(1); }
-      50% { transform: translate(20px, 30px) scale(0.9); }
-    }
-
-    .blob-1 {
-      animation: float-1 9s infinite ease-in-out;
-      transform-origin: center;
-    }
-    .blob-2 {
-      animation: float-2 12s infinite ease-in-out;
-      transform-origin: center;
-    }
-    .blob-3 {
-      animation: float-3 10s infinite ease-in-out;
-      transform-origin: center;
-    }
-
     /* Text Styles */
     .title-text {
       fill: #ffffff;
@@ -86,25 +70,38 @@
     
     .accent-dot {
       fill: #00f3ff;
-      filter: drop-shadow(0 0 4px #00f3ff);
+      filter: url(#glow-cyan);
     }
   </style>
 
   <!-- Dark Background -->
   <rect width="800" height="220" fill="url(#bg-gradient)" />
 
-  <!-- Colorful Ambient Glows (Behind the Glass) -->
+  <!-- Colorful Ambient Glows (Behind the Glass using native SMIL animations) -->
   <g filter="url(#ambient-blur)" opacity="0.65">
     <!-- Cyan Blob -->
-    <circle cx="260" cy="110" r="80" fill="#00f3ff" class="blob-1" />
+    <circle cx="260" cy="110" r="80" fill="#00f3ff">
+      <animate attributeName="cx" values="260;220;290;260" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="110;140;80;110" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="r" values="80;95;70;80" dur="10s" repeatCount="indefinite" />
+    </circle>
+    
     <!-- Pink/Magenta Blob -->
-    <circle cx="540" cy="110" r="90" fill="#ff007f" class="blob-2" />
+    <circle cx="540" cy="110" r="90" fill="#ff007f">
+      <animate attributeName="cx" values="540;580;500;540" dur="12s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="110;80;130;110" dur="12s" repeatCount="indefinite" />
+      <animate attributeName="r" values="90;105;80;90" dur="12s" repeatCount="indefinite" />
+    </circle>
+    
     <!-- Purple Blob -->
-    <circle cx="400" cy="120" r="70" fill="#bd00ff" class="blob-3" />
+    <circle cx="400" cy="120" r="70" fill="#bd00ff">
+      <animate attributeName="cx" values="400;430;370;400" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="120;140;100;120" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="r" values="70;85;60;70" dur="8s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <!-- Glassmorphism Container Card -->
-  <!-- We apply shadow, gradient fill, and the reflection borders -->
   <g filter="url(#glass-shadow)">
     <!-- Base frosted glass sheet -->
     <rect x="70" y="30" width="660" height="160" rx="20" ry="20" fill="url(#glass-grad)" stroke="url(#glass-border)" stroke-width="1.5" />
@@ -114,22 +111,34 @@
   </g>
 
   <!-- Glass Pane Content (Name and Title) -->
-  <!-- Centered horizontally and vertically -->
   <g transform="translate(400, 110)">
-    <!-- Main Name -->
-    <text x="0" y="2" class="title-text" text-anchor="middle">DEVANSH TRIVEDI</text>
+    <!-- Main Name (Soft breathing glow) -->
+    <text x="0" y="2" class="title-text" text-anchor="middle" filter="url(#glow-cyan)">
+      DEVANSH TRIVEDI
+    </text>
     
     <!-- Decorative underline -->
     <line x1="-80" y1="18" x2="80" y2="18" stroke="#ffffff" stroke-width="1" opacity="0.3" />
-    <circle cx="0" cy="18" r="2.5" class="accent-dot" />
+    
+    <!-- Animated Glowing accent dot -->
+    <circle cx="0" cy="18" r="2.5" class="accent-dot">
+      <animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+    </circle>
 
     <!-- Subtitle Taglines -->
-    <text x="0" y="40" class="subtitle-text" text-anchor="middle">AI, ROBOTICS &amp; IOT ENGINEER • FULL STACK DEVELOPER</text>
+    <text x="0" y="40" class="subtitle-text" text-anchor="middle">
+      AI, ROBOTICS &amp; IOT ENGINEER • FULL STACK DEVELOPER
+    </text>
   </g>
 
   <!-- Corner Tech Details for Glass styling -->
-  <g opacity="0.4" fill="#ffffff" font-family="monospace" font-size="8" letter-spacing="1">
-    <text x="90" y="52">SYS.INIT: SAFE</text>
-    <text x="710" y="52" text-anchor="end">LOC: 27.17° N</text>
+  <g fill="#ffffff" font-family="monospace" font-size="8" letter-spacing="1">
+    <!-- Fading system status -->
+    <text x="90" y="52">
+      SYS.INIT: SAFE
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite" />
+    </text>
+    <text x="710" y="52" text-anchor="end" opacity="0.4">LOC: 27.17° N</text>
   </g>
 </svg>
