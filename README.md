@@ -45,9 +45,15 @@
   <br/>
   <div align="center">
     <p>Enjoy a classic game of Pac-Man running on my actual GitHub contributions!</p>
-    <picture>
-      <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/devanshtrivedi-bit/devanshtrivedi-bit/output/pacman-contribution-graph.svg" width="100%">
-    </picture>
+    <table border="1" cellpadding="20" bordercolor="#444444" style="border-radius: 15px; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+      <tr>
+        <td align="center">
+          <picture>
+            <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/devanshtrivedi-bit/devanshtrivedi-bit/output/pacman-contribution-graph.svg" width="100%">
+          </picture>
+        </td>
+      </tr>
+    </table>
   </div>
 </details>
 
