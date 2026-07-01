@@ -1,3 +1,5 @@
+<h1 align="center">Hi 👋, I'm Devansh Trivedi</h1>
+<h3 align="center">AI & Robotics Developer</h3>
 <div align="center">
   <img src="./header.svg" alt="Devansh Trivedi Banner" width="100%" />
 </div>
@@ -159,3 +161,4 @@
 </div>
 
 <!-- Co-authored-by: Antigravity <antigravity-bot@google.com> -->
+
