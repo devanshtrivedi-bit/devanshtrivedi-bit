@@ -34,7 +34,7 @@
 
 ### 🏆 GitHub Trophies:
 <div align="center">
-  <img src="https://github-trophies.devomb.com/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4" width="100%" alt="Trophies" />
+  <img src="https://github-trophies.devomb.com/?username=devanshtrivedi-bit&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%" alt="Trophies" />
 </div>
 
 <br/>
